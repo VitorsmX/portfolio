@@ -31,7 +31,7 @@ const config = {
 
   site: "https://visoteckgo.vercel.app",
 
-  githubUsername: "vitorsm10",
+  githubUsername: "VitorsmX",
   githubRepo: "portfolio",
 
   get ogImg() {
@@ -40,7 +40,7 @@ const config = {
 
   social: {
     linkedin: "https://www.linkedin.com/in/vitorsm10/",
-    github: "https://github.com/vitorsm10",
+    github: "https://github.com/VitorsmX",
   },
 };
 
