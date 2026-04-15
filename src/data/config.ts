@@ -27,9 +27,9 @@ const config = {
 
   author: "Vitor Sousa Mesquita",
 
-  email: "visoteck.contato@gmail.com",
+  email: "contato@portfoliovsm.com.br",
 
-  site: "https://visoteckgo.vercel.app",
+  site: "https://portfoliovsm.com.br",
 
   githubUsername: "vitorsm10",
   githubRepo: "portfolio",
