@@ -17,6 +17,11 @@ import {
   SiExpress,
   SiOpenai,
   SiCplusplus,
+  SiNestjs,
+  SiFastify,
+  SiPrisma,
+  SiVite,
+  SiDocker,
 } from "react-icons/si";
 
 const BASE_PATH = "/assets/projects-screenshots";
@@ -138,6 +143,40 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiCplusplus />,
   },
+  nest: {
+    title: "NestJS",
+    bg: "black",
+    fg: "white",
+    icon: <SiNestjs />,
+  },
+
+  fastify: {
+    title: "Fastify",
+    bg: "black",
+    fg: "white",
+    icon: <SiFastify />,
+  },
+
+  prisma: {
+    title: "Prisma ORM",
+    bg: "black",
+    fg: "white",
+    icon: <SiPrisma />,
+  },
+
+  vite: {
+    title: "Vite",
+    bg: "black",
+    fg: "white",
+    icon: <SiVite />,
+  },
+
+  docker: {
+    title: "Docker",
+    bg: "black",
+    fg: "white",
+    icon: <SiDocker />,
+  },
 };
 
 /* -------------------- TYPE -------------------- */
@@ -157,6 +196,149 @@ export type Project = {
 /* -------------------- PROJETOS -------------------- */
 
 const projects: Project[] = [
+  {
+    id: "helpdesk-ti-erp",
+
+    category: "ERP / Gestão Pública",
+
+    title: "Helpdesk TI — ERP Municipal Multimódulos",
+
+    src: `${BASE_PATH}/helpdeskti/1.png`,
+
+    screenshots: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+    ],
+
+    live: "https://helpdeskti.online",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.vite,
+      ],
+
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.nest,
+        PROJECT_SKILLS.fastify,
+        PROJECT_SKILLS.postgres,
+        PROJECT_SKILLS.prisma,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+
+    content: (
+      <div>
+        <TypographyP>
+          Plataforma ERP municipal modular desenvolvida para centralizar processos
+          administrativos, operacionais e de tecnologia da informação em uma única
+          arquitetura.
+        </TypographyP>
+
+        <TypographyP>
+          O projeto nasceu como uma central de atendimento de TI e evoluiu para uma
+          plataforma <strong>multi-módulos</strong>, incorporando gestão de
+          chamados, tarefas, estoque, patrimônio, força de trabalho e serviços
+          financeiros.
+        </TypographyP>
+
+        <TypographyP>
+          A arquitetura atual utiliza <strong>React e TypeScript</strong> no
+          frontend, <strong>Node.js, NestJS e Fastify</strong> na API e
+          <strong> PostgreSQL com Prisma</strong> na persistência, organizados em
+          um monorepo modular com pnpm e Nx.
+        </TypographyP>
+
+        <ProjectsLinks live="https://helpdeskti.online" />
+
+        <TypographyH3 className="mt-6">
+          Principais módulos
+        </TypographyH3>
+
+        <ul className="list-disc ml-6 font-mono">
+          <li>
+            Central de Atendimento e Service Desk com chamados, fila técnica e SLA
+          </li>
+
+          <li>
+            Gestão de tarefas com quadros, listas, filtros, responsáveis e
+            acompanhamento de atividades
+          </li>
+
+          <li>
+            Inventário e gestão de ativos, equipamentos e patrimônio
+          </li>
+
+          <li>
+            Controle de estoque e insumos com entradas, saídas, ajustes e alertas
+          </li>
+
+          <li>
+            Gestão de força de trabalho e organização de escalas
+          </li>
+
+          <li>
+            Estrutura organizacional por unidades, setores e escopos de acesso
+          </li>
+
+          <li>
+            Notificações, auditoria e controle granular de permissões
+          </li>
+        </ul>
+
+        <TypographyH3 className="mt-6">
+          Módulo Financeiro
+        </TypographyH3>
+
+        <TypographyP>
+          O ERP possui uma Central de Serviços Financeiros independente, com
+          dashboard gerencial para acompanhamento de receitas e despesas,
+          lançamentos financeiros, conferência de valores, categorias, unidades,
+          usuários e histórico de alterações.
+        </TypographyP>
+
+        <TypographyP>
+          O módulo inclui mecanismos de reconciliação para destacar divergências
+          entre valores declarados e calculados, filtros por exercício e unidade,
+          atualização dos indicadores e trilha de auditoria.
+        </TypographyP>
+
+        <div className="flex flex-col md:flex-row gap-3 my-4 mb-8">
+          <Link
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://helpdeskti.online/finance"
+          >
+            <Button size="sm" variant="secondary">
+              Acessar Módulo Financeiro
+              <ArrowUpRight className="ml-2 w-4 h-4" />
+            </Button>
+          </Link>
+        </div>
+
+        <TypographyH3 className="mt-6">
+          Arquitetura e engenharia
+        </TypographyH3>
+
+        <ul className="list-disc ml-6 font-mono">
+          <li>Monorepo modular utilizando pnpm e Nx</li>
+          <li>Frontend React 19 com Vite e TypeScript</li>
+          <li>API NestJS executada sobre Fastify</li>
+          <li>PostgreSQL e Prisma ORM</li>
+          <li>Workers independentes para processamento assíncrono</li>
+          <li>Controle de acesso por funções, permissões e escopo organizacional</li>
+          <li>Autenticação, MFA, sessões seguras e proteção contra abuso</li>
+          <li>Auditoria das principais operações administrativas</li>
+          <li>Arquitetura preparada para múltiplos módulos e contextos municipais</li>
+          <li>Containerização com Docker e implantação em infraestrutura cloud</li>
+        </ul>
+      </div>
+    ),
+  },
   {
     id: "geu-site",
 
