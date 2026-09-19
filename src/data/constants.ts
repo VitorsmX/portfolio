@@ -198,6 +198,28 @@ export type Experience = {
 
 export const EXPERIENCE: Experience[] = [
   {
+    id: 1,
+    startDate: "Mar 2026",
+    endDate: "Presente",
+    title: "Analista de Suporte e Desenvolvimento (Híbrido)",
+    company: "Prefeitura Municipal de Capanema",
+    description: [
+      "Desenvolvimento de aplicações Full Stack utilizando JavaScript para atender demandas e processos internos da administração municipal.",
+      "Desenvolvimento e evolução de um ERP Municipal modular para gerenciamento de chamados de suporte técnico, tarefas, insumos, hardware e serviços financeiros auxiliares.",
+      "Gerenciamento da implantação e operação do ERP em ambiente de nuvem, acompanhando atualizações, disponibilidade e infraestrutura da aplicação.",
+      "Levantamento de requisitos e tradução de necessidades dos usuários e setores administrativos em soluções técnicas.",
+      "Suporte técnico avançado, diagnóstico, manutenção e reparo de computadores e equipamentos pertencentes ao patrimônio municipal.",
+      "Treinamento e suporte aos usuários para adoção de sistemas e ferramentas digitais implantadas nos setores atendidos.",
+    ],
+    skills: [
+      SkillNames.JS,
+      SkillNames.NODEJS,
+      SkillNames.POSTGRES,
+      SkillNames.GIT,
+      SkillNames.LINUX,
+    ],
+  },
+  {
     id: 2,
     startDate: "Fev 2023",
     endDate: "Nov 2025",
@@ -226,21 +248,3 @@ export const EXPERIENCE: Experience[] = [
     skills: [SkillNames.JS, SkillNames.GIT],
   },
 ];
-
-export const themeDisclaimers = {
-  light: [
-    "Warning: Light mode emits a gazillion lumens of pure radiance!",
-    "Caution: Light mode ahead! Please don't try this at home.",
-    "Only trained professionals can handle this much brightness. Proceed with sunglasses!",
-    "Brace yourself! Light mode is about to make everything shine brighter than your future.",
-    "Flipping the switch to light mode... Are you sure your eyes are ready for this?",
-  ],
-  dark: [
-    "Light mode? I thought you went insane... but welcome back to the dark side!",
-    "Switching to dark mode... How was life on the bright side?",
-    "Dark mode activated! Thanks you from the bottom of my heart, and my eyes too.",
-    "Welcome back to the shadows. How was life out there in the light?",
-    "Dark mode on! Finally, someone who understands true sophistication.",
-  ],
-};
-
